@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+body{
+    background-color:#D1F6F9;
+    font-family: 'ARIAL', cursive;
+    height: 100vh;
+    width: 100%
+  } 
+.container{
+    background:url(fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+
+    }
+button 
+{
+        border-radius: 10px;
+        border: 3px solid purple;
+        color: #34d82e;
+        background-color:rgb(241, 223, 223);
+        font-family: 'Harrington', cursive;
+        font-size: 35px
+       } 
+ 
+.titulo 
+{
+        color: rgb(146, 10, 123);
+        text-align: center;
+        font-size: 20px;
+         margin-bottom: 10px ;
+    } 
+.titulo2 
+    {
+            color: rgb(146, 10, 123);
+            text-align: center;
+            font-size: 20px;
+            margin: 30px ;
+            margin-top:50px;
+            margin-bottom: 100px;
+        } 
+
+.sirlan{
+    height:330px;
+    width: 300px;
+    margin-left: 450px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+  }
+  .lola{
+    height:330px;
+    width: 300px;
+    margin-left: 250px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+  }
+
+  .nombresirlan{
+    font-size: 30px;
+    left: 550px;
+    margin-left: 500px;
+    color: #CB51F9;
+  
+    
+  }
+  .nombrelola{
+    font-size: 30px;
+    text-align-last: justify; 
+    margin-left: 1100px;
+    margin-bottom: 10px;
+    color: #CB51F9;
+  }
+
+
+.fotoniños{
+    height:300px;
+    width: 300px;
+    margin-left: 450px;
+    margin-bottom: 150px;
+    border-radius: 30px;
+  }
+.fotoiglesia{
+    height:300px;
+    width: 300px;
+    margin-left: 250px;
+    margin-bottom: 150px;
+    border-radius: 30px;
+  }
+  .marca {
+    background-color:#dab8ff;
+    font-family: 'Comic Sans MS';
+    color:white;
+  }   
+  .inicio {
+    background-color:#CCFEEA   ;
+     text-align: center; 
+     margin: 30px auto;
+     height: 900px;
+     width: 65%;
+   } 
+   .inicio {
+    border-radius: 20px;
+     border: 10px solid ;
+     color:#9CF7D4
+   } 
+   .texto {
+    color: #d665f0;
+    font-size: 30px;
+   font-family: 'Indie Flower';
+  } 
+.carta {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT96oQhgL0FDjzPeuBHqtauGFj-AyJKtVyrA&usqp=CAU)  ;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    text-align: center; 
+    margin: 30px auto; 
+    height: 600px;
+    width: 65%;
+    border-radius: 20px
+   }  
+  
+   .textocarta{
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+   margin-left: 200px;
+    ; 
+  }
+
+  
+   .recuerdo {
+    background:url(fondocarta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    text-align: center; 
+    margin: 30px auto; 
+    height: 400px;
+    width: 65%;
+    border-radius: 20px
+   }  
+
+   .textorecuerdo{
+    font-family: 'Indie Flower';
+    font-size: 27px;
+    text-align: center;
+    left: 200px ;  
+  }
+   
+ 
+/*  tamaño y posicion de la galaria */
+.galeria{
+  background-color:#CCFEEA   ;
+   text-align: center; 
+   margin: 30px auto;
+   height: 700px;
+   width: 800px ;
+   margin-top: 100px;
+ } 
+/*  quitar el formato lista de las opciones el (.) */
+ul, li {
+  list-style: none;
+}
+/*  posicion y tamaño de las slider */
+.slider{
+position: relative;
+width:100%;
+height: 500px;
+
+}
+/*  dentro del ul tenemos los slider y nuestro valor de liosta li la psition absolute 
+dicen que estan uno sobre el otro left y top ya estan por defecto  opacity 0 los oculta  ionherit hace que tome el 
+valor  del elemento*/
+ul.slider li {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  background:rgb(163, 255, 224);
+}
+/* esta llamando a las imagenes object cover ajusta la imagen */
+ul.slider li img{
+width:100%;
+height: 500px;
+object-fit: cover;
+}
+/*Mostramos el primer hijo de esa lista y tiene opacity 1 y este si ve a diferencia de los otros que lo tienen 
+en 0 */
+ul.slider li:first-child {
+  opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+  opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu{
+text-align: center;
+margin: 50px;
+}
+/* display - inline-block - los deja horizontalmente ,le quita el salto de lionea a los numeros */
+ .menu li{
+  display: inline-block;
+  }
+
+.menu li a{
+display: inline-block; /* ldeja mas uniform los circulos - respeta las medidas propuestas */
+color: #34d82e;
+text-decoration: none;/* quita el subrayado de los numeros */
+background-color: rgb(241, 223, 223);
+border: 3px solid purple;
+padding: 10px;
+width: 20px;
+height: 20px;
+font-size: 20px;
+border-radius: 100%; /* vuelve el cuadrado circulo por el border al 100%*/
+}
+
+@media (max-width:480px){
+  .container{
+      background:url(fondo.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
